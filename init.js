@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(function() {
       {
         conditions: [
           new chrome.declarativeContent.PageStateMatcher({
-            pageUrl: {urlMatches: 'https:\/\/go.twitch.tv\/.+' },
+            pageUrl: {urlMatches: '(twitch.tv\/.)' },
           })
         ],
         actions: [
